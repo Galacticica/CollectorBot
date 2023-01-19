@@ -8,7 +8,7 @@ from discord.ext import commands, tasks
 from random import randint
 
 async def newCardEmbed(ctx, client):
-    parameters = ['name', 'rarity', 'done', 'franchise', 'primary', "secondary", "species", "image", "cancel"]
+    parameters = ['name', 'rarity', 'done', 'franchise', 'primary', "secondary", "species", "image", "cancel", "identity"]
     rarities = ["common", "uncommon", "rare", "epic", "legendary", "mythic", "special"]
     name = ""
     identity = "N/A"

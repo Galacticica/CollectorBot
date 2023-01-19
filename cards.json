@@ -24,7 +24,7 @@
     1
   ],
   "Drax": [
-    "N/A",
+    "Drax the Destroyer",
     "Rare",
     "Marvel",
     "Kylosian",
@@ -33,6 +33,30 @@
     "https://imgur.com/uq6GjRS.png",
     "Not Owned",
     250,
+    1
+  ],
+  "Rocket": [
+    "Rocket Raccoon",
+    "Epic",
+    "Marvel",
+    "Raccoon",
+    "Giant Missile",
+    "Machine Gun Spin",
+    "https://imgur.com/SyBAI7U.png",
+    "Not Owned",
+    334,
+    1
+  ],
+  "Groot": [
+    "N/A",
+    "Legendary",
+    "Marvel",
+    "Flora Colossus",
+    "We Are Groot",
+    "I Am Groot",
+    "https://imgur.com/VGeohoX.png",
+    "Not Owned",
+    492,
     1
   ]
 }
