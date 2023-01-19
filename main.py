@@ -30,5 +30,5 @@ async def createCard(ctx):
 
 
 
-token = 'MTA2NDY5MDQzOTUxODY5NTQzNA.GPEPb5.1rR_FDaHEs9KhZjvNb6kEYqrQiYvuhLZA05Gj8'
+token = ''
 client.run(token)
