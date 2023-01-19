@@ -93,6 +93,7 @@ async def newCardEmbed(ctx, client):
                                                f"Species: {species}\n"
                                                f"Primary Attack: {primary}\n"
                                                f"Secondary Attack: {secondary}")
+            msg = await ctx.send(embed=newEmbed)
         elif msg.content.lower() == "species":
             await ctx.send("Enter the card's species.")
             species = await client.wait_for('message', check=lambda message: message.author == ctx.author, timeout=60.0)
