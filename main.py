@@ -7,16 +7,18 @@ from discord.ext import commands, tasks
 from random import randint
 import create_card as cc
 import card_info as ci
+import update_server_cards as usc
 
 intents = discord.Intents.default()
 intents.message_content = True
-client = commands.Bot(command_prefix = 'card', intents=intents)
+client = commands.Bot(command_prefix = 'card.', intents=intents)
 
 @client.event
 async def on_ready():
     print("I Have Come.")
 
 @client.event
+#creates a server card database specific to that server
 async def on_guild_join(guild):
     serverID = guild.id
     file = f"{serverID}_cards.json"
@@ -41,8 +43,10 @@ async def create(ctx):
 async def info(ctx, name):
     await ci.get_card_info(ctx, name)
 
-
-
+@client.command()
+async def addnew(ctx):
+    serverID = ctx.message.guild.id
+    await usc.update_cards(ctx, serverID)
 
 token = ''
 client.run(token)

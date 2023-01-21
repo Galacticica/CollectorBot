@@ -9,6 +9,9 @@ from random import randint
 
 
 async def get_card_info(ctx, name, file="cards.json"):
+    #grabs the card information
+    serverID = ctx.message.guild.id
+    file = str(serverID) + "_" + file
     with open (file) as database:
         data = json.load(database)
         cards = data.keys()
