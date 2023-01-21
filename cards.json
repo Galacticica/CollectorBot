@@ -277,7 +277,7 @@
   ],
   "K.E.V.I.N.": [
     "N/A",
-    "Special",
+    "Mythic",
     "Marvel",
     "Robot",
     "The Perfect Ending",
@@ -297,6 +297,30 @@
     "https://imgur.com/0NQLSMj.png",
     "Not Owned",
     354,
+    1
+  ],
+  "Hulk": [
+    "Bruce Banner",
+    "Epic",
+    "Marvel",
+    "Human",
+    "Smash",
+    "Thunder Clap",
+    "https://imgur.com/dyCswut.png",
+    "Not Owned",
+    363,
+    1
+  ],
+  "Thor": [
+    "N/A",
+    "Epic",
+    "Marvel",
+    "Asgardian",
+    "Lightning Strike",
+    "Hammer Slam",
+    "https://imgur.com/1Y41x30.png",
+    "Not Owned",
+    323,
     1
   ]
 }
