@@ -13,9 +13,10 @@ async def get_card_info(ctx, name, file="cards.json"):
         data = json.load(database)
         cards = data.keys()
         for x in cards:
-            if name.capitalize() == x:
+            if name.lower() == x.lower():
                 card = data.get(x)
-        name = name.capitalize()
+                name = x
+        name = name.replace("_", " ")
         identity = card[0]
         rarity = card[1]
         franchise = card[2]
@@ -37,3 +38,4 @@ async def get_card_info(ctx, name, file="cards.json"):
                 f"Secondary Attack: {secondary}", color=0x6622f0)
     card_embed.set_image(url=f"{image}")
     await ctx.send(embed=card_embed)
+    database.close()

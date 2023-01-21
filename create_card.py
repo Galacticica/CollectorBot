@@ -148,15 +148,18 @@ async def newCardEmbed(ctx, client):
 def add_card_to_database(name, identity, rarity, franchise, species, primary, secondary, image, file="cards.json", owner="Not Owned", level=1):
     with open (file) as database:
         data = json.load(database)
+        name = name.replace(" ", "_")
         value = determine_value(rarity)
         #name: [identity, rarity, franchise, species, primary, secondary, image, owner, value, level]
         data[name] = [identity, rarity, franchise, species, primary, secondary, image, owner, value, level]
         write_to_database(data)
+    database.close()
 
 
 def write_to_database(data, file="cards.json"):
     with open (file, 'w') as f:
         json.dump(data, f, indent=2)
+    f.close()
 
 def determine_value(rarity):
     if rarity.lower() == "common":
